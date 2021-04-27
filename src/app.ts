@@ -1,6 +1,6 @@
-import { Stack } from "./datastructures/Stack";
+import { StackArray } from "./datastructures/StackArray";
 
-const stack = new Stack()
+const stack = new StackArray()
 
 /* Verifica se a pilha está vazia */
 console.log(stack.isEmpty())

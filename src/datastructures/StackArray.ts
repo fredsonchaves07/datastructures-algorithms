@@ -1,4 +1,4 @@
-class Stack<T>{
+class StackArray<T>{
     
     private items: T[] 
 
@@ -31,4 +31,4 @@ class Stack<T>{
     }
 }
 
-export { Stack }
+export { StackArray }
