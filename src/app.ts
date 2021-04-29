@@ -1,9 +1,9 @@
 import { Stack } from "./datastructures/Stack";
 import { StackArray } from "./datastructures/StackArray";
 
+/* Datastructures*/
 const stack = new Stack
 
-/* Verifica se a pilha está vazia */
 console.log(stack.isEmpty())
 
 stack.push(5)
@@ -23,3 +23,6 @@ stack.pop()
 console.log(stack.size())
 
 console.log(stack.toString())
+
+/* Algorithms Problems */
+
