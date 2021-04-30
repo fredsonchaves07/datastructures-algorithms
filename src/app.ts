@@ -1,3 +1,4 @@
+import { DecimalToBinary } from "./algorithms/DecimalToBinary";
 import { Stack } from "./datastructures/Stack";
 import { StackArray } from "./datastructures/StackArray";
 
@@ -25,4 +26,7 @@ console.log(stack.size())
 console.log(stack.toString())
 
 /* Algorithms Problems */
+const decimalToBinary = new DecimalToBinary()
 
+console.log(decimalToBinary.calculate(10))
+console.log(decimalToBinary.calculate(0))
