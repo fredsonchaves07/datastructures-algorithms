@@ -2,7 +2,7 @@ import { Stack } from "../datastructures/Stack"
 
 class DecimalToBinary{
 
-    private stack = new Stack()
+    private stack = new Stack<number>()
 
     calculate(decNumber: number): string{
         let resultDecimal = decNumber

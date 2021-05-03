@@ -2,7 +2,7 @@ import { Stack } from "../datastructures/Stack"
 
 class BaseConvert{
 
-    private stack = new Stack()
+    private stack = new Stack<number>()
     private DIGITS = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
     convert(decNumber: number, base: number): string{
