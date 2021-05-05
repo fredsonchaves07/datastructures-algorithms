@@ -1,6 +1,7 @@
 import { BaseConvert } from "./algorithms/BaseConvert";
 import { DecimalToBinary } from "./algorithms/DecimalToBinary";
 import { Palindrome } from "./algorithms/Palindrome";
+import { TowerOfHanoi } from "./algorithms/TowerOfHanoi";
 import { Stack } from "./datastructures/Stack";
 import { StackArray } from "./datastructures/StackArray";
 
@@ -31,6 +32,7 @@ console.log(stack.toString())
 const decimalToBinary = new DecimalToBinary()
 const baseConvert = new BaseConvert()
 const palindrome = new Palindrome
+let towerOfHanoi: TowerOfHanoi
 
 console.log(decimalToBinary.calculate(10))
 console.log(decimalToBinary.calculate(0))
@@ -47,3 +49,10 @@ if(palindrome.check(word)){
 } else {
     console.log(`A palavra ${word} não é palindroma`)
 }
+
+/* TowerOfHanoi */
+const discs: number[] = [10, 3, 8, 1, 20, 15, 100, 20, 10, 50, 60, 80]
+
+towerOfHanoi = new TowerOfHanoi(discs)
+console.log(towerOfHanoi.toString())
+
