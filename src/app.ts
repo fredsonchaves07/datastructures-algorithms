@@ -1,3 +1,4 @@
+import { BalancedSymbols } from "./algorithms/BalancedSymbols";
 import { BaseConvert } from "./algorithms/BaseConvert";
 import { DecimalToBinary } from "./algorithms/DecimalToBinary";
 import { Palindrome } from "./algorithms/Palindrome";
@@ -31,7 +32,8 @@ console.log(stack.toString())
 /* Algorithms Problems */
 const decimalToBinary = new DecimalToBinary()
 const baseConvert = new BaseConvert()
-const palindrome = new Palindrome
+const palindrome = new Palindrome()
+const balancedSymbols = new BalancedSymbols()
 let towerOfHanoi: TowerOfHanoi
 
 console.log(decimalToBinary.calculate(10))
@@ -55,4 +57,9 @@ const discs: number[] = [10, 3, 8, 1, 20, 15, 100, 20, 10, 50, 60, 80]
 
 towerOfHanoi = new TowerOfHanoi(discs)
 console.log(towerOfHanoi.toString())
+
+/* Balanced Symbols */
+const symbols = '(())'
+
+console.log(balancedSymbols.isBalanced(symbols))
 
