@@ -3,11 +3,13 @@ import { BaseConvert } from "./algorithms/BaseConvert";
 import { DecimalToBinary } from "./algorithms/DecimalToBinary";
 import { Palindrome } from "./algorithms/Palindrome";
 import { TowerOfHanoi } from "./algorithms/TowerOfHanoi";
+import { Queue } from "./datastructures/Queue";
 import { Stack } from "./datastructures/Stack";
 import { StackArray } from "./datastructures/StackArray";
 
 /* Datastructures*/
 const stack = new Stack
+const queue = new Queue()
 
 console.log(stack.isEmpty())
 
@@ -62,4 +64,14 @@ console.log(towerOfHanoi.toString())
 const symbols = '(())'
 
 console.log(balancedSymbols.isBalanced(symbols))
+
+console.log(queue.isEmpty())
+queue.enqueue('Jhon')
+queue.enqueue('Jack')
+console.log(queue.toString())
+queue.enqueue('Camila')
+queue.dequeue()
+console.log(queue.toString())
+console.log(queue.size())
+
 
