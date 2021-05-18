@@ -3,13 +3,15 @@ import { BaseConvert } from "./algorithms/BaseConvert";
 import { DecimalToBinary } from "./algorithms/DecimalToBinary";
 import { Palindrome } from "./algorithms/Palindrome";
 import { TowerOfHanoi } from "./algorithms/TowerOfHanoi";
+import { Deque } from "./datastructures/Deque";
 import { Queue } from "./datastructures/Queue";
 import { Stack } from "./datastructures/Stack";
 import { StackArray } from "./datastructures/StackArray";
 
 /* Datastructures*/
-const stack = new Stack
+const stack = new Stack()
 const queue = new Queue()
+const deque = new Deque()
 
 console.log(stack.isEmpty())
 
@@ -74,4 +76,13 @@ queue.dequeue()
 console.log(queue.toString())
 console.log(queue.size())
 
+console.log(deque.isEmpty())
+deque.addBack('Jhon')
+deque.addBack('Jack')
+console.log(deque.toString())
+deque.addBack('Camila')
+console.log(deque.toString())
+deque.removeFront()
+deque.removeBack()
+console.log(deque.toString())
 
