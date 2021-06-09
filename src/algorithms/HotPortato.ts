@@ -4,7 +4,8 @@ import { Queue } from "../datastructures/Queue"
 class HotPotato{
 
     private queue = new Queue<string>()
-    private elimitadeList: string[] =  []
+    private eliminatedList: string[] =  []
+    private winner: string = ''
 
     constructor(elementList: string[], num: number){
         for(let i = 0; i < elementList.length; i++){
@@ -17,16 +18,15 @@ class HotPotato{
             }
         }
 
-        this.elimitadeList.push(String(this.queue.dequeue()))
-
-        this.printResult()
+        this.eliminatedList.push(String(this.queue.dequeue()))
     }
 
-    private printResult(): Object{
-        return {
-            eliminated: this.elimitadeList,
-            winner: this.queue.dequeue()
-        }
+    getEliminated(): string[]{
+        return this.eliminatedList
+    }
+
+    getWinner(): string{
+        return this.winner
     }
 }
 

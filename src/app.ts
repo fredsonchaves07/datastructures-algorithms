@@ -1,6 +1,7 @@
 import { BalancedSymbols } from "./algorithms/BalancedSymbols";
 import { BaseConvert } from "./algorithms/BaseConvert";
 import { DecimalToBinary } from "./algorithms/DecimalToBinary";
+import { HotPotato } from "./algorithms/HotPortato";
 import { Palindrome } from "./algorithms/Palindrome";
 import { TowerOfHanoi } from "./algorithms/TowerOfHanoi";
 import { Deque } from "./datastructures/Deque";
@@ -39,6 +40,7 @@ const baseConvert = new BaseConvert()
 const palindrome = new Palindrome()
 const balancedSymbols = new BalancedSymbols()
 let towerOfHanoi: TowerOfHanoi
+let hotPotato: HotPotato
 
 console.log(decimalToBinary.calculate(10))
 console.log(decimalToBinary.calculate(0))
@@ -86,3 +88,12 @@ deque.removeFront()
 deque.removeBack()
 console.log(deque.toString())
 
+/* Hot potato */
+const names = ['Jhon', 'Jack', 'Camila', 'Ingrid', 'Carl']
+hotPotato = new HotPotato(names, 7)
+
+hotPotato.getEliminated().forEach(name => {
+    console.log(`${name} was eliminated from the Hot Potato game`)
+})
+
+console.log(`${hotPotato.getWinner()} is the winner!!`)
