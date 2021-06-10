@@ -16,9 +16,11 @@ class HotPotato{
             for(let i = 0; i < num; i++){
                 this.queue.enqueue(String(this.queue.dequeue()))
             }
+
+            this.eliminatedList.push(String(this.queue.dequeue()))
         }
 
-        this.eliminatedList.push(String(this.queue.dequeue()))
+        this.winner = String(this.queue.dequeue())
     }
 
     getEliminated(): string[]{
