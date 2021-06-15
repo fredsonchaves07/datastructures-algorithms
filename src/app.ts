@@ -5,6 +5,7 @@ import { HotPotato } from "./algorithms/HotPortato";
 import { Palindrome } from "./algorithms/Palindrome";
 import { TowerOfHanoi } from "./algorithms/TowerOfHanoi";
 import { Deque } from "./datastructures/Deque";
+import { LinkedList } from "./datastructures/LinkedList";
 import { Queue } from "./datastructures/Queue";
 import { Stack } from "./datastructures/Stack";
 import { StackArray } from "./datastructures/StackArray";
@@ -13,6 +14,7 @@ import { StackArray } from "./datastructures/StackArray";
 const stack = new Stack()
 const queue = new Queue()
 const deque = new Deque()
+const list = new LinkedList()
 
 console.log(stack.isEmpty())
 
@@ -97,3 +99,7 @@ hotPotato.getEliminated().forEach(name => {
 })
 
 console.log(`${hotPotato.getWinner()} is the winner!!`)
+
+/* LinkedList */
+list.push(15)
+list.push(10)
